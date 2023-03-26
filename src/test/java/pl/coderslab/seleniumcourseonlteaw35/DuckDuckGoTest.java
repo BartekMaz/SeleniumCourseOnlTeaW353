@@ -24,6 +24,7 @@ public class DuckDuckGoTest {
         driver.get("https://duckduckgo.com/");
         // when
         WebElement searchInput = driver.findElement(By.id("search_form_input_homepage"));
+//        WebElement searchInput2 = driver.findElement(By.cssSelector("#search_form_input_homepage"));
         searchInput.clear();
         final String searchQuery = "W pustyni i w puszczy";
         searchInput.sendKeys(searchQuery);
