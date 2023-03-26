@@ -2,6 +2,7 @@ target/
 out/
 .idea/
 *.iml
+src/test/resources/drivers/
 
 # Compiled class file
 *.class

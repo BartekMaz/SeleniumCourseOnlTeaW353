@@ -13,6 +13,7 @@ import java.util.List;
 public class DuckDuckGoTest {
     @Test
     public void searchWithDuckDuckGo() {
+        System.setProperty("webdriver.chrome.driver", "src/test/resources/drivers/chromedriver.exe");
         WebDriver driver = new ChromeDriver();
         driver.get("https://duckduckgo.com/");
         WebElement searchInput = driver.findElement(By.id("search_form_input_homepage"));
