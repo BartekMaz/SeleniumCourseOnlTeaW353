@@ -22,6 +22,7 @@ public class AssertionsExampleTes {
         assertEquals(42, actual);
         assertEquals(42, actual, "assertion failed!");
         assertEquals(3.14, 3.14, 0.01);
+//        assertEquals(0.1 + 0.2, 0.3);
         assertNotEquals(42, 43);
         assertNotNull(new Object());
         assertNull(null);
