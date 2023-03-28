@@ -6,6 +6,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
+import static org.junit.jupiter.api.Assertions.assertNotNull;
+
 public class WyszZad1Test {
 
     //Na stronie https://hotel-testlab.coderslab.pl/en/ zidentyfikuj następująca pola/przyciski
@@ -28,7 +30,8 @@ public class WyszZad1Test {
         WebElement searchInput = driver.findElement(By.id("hotel_location"));
         searchInput.clear();
         searchInput.sendKeys("Warsaw");
-        WebElement searchButton = driver.findElement(By.id("search_room_submit"));
+        WebElement searchNowButton = driver.findElement(By.id("search_room_submit"));
+        assertNotNull(searchNowButton);
  //       searchButton.click();
         WebElement newsletterInput = driver.findElement(By.id("newsletter-input"));
         newsletterInput.clear();
