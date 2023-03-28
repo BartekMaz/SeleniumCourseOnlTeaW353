@@ -40,8 +40,8 @@ public class WyszZad2Test {
         WebElement searchSubscribe = driver.findElement(By.name("submitNewsletter"));
         assertNotNull(searchSubscribe);
 
-  //    WebElement searchButton = driver.findElement(By.name("search_room_submit"));
-  //    searchButton.submit();
+//      WebElement searchButtonNow = driver.findElement(By.name("search_room_submit"));
+//      searchButtonNow.submit();
 
 
     }
