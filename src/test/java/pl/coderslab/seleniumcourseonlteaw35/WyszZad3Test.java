@@ -22,10 +22,16 @@ import org.openqa.selenium.chrome.ChromeDriver;
             System.setProperty("webdriver.chrome.driver", "src/test/resources/drivers/chromedriver.exe");
             WebDriver driver = new ChromeDriver();
 
-            driver.get("https://hotel-testlab.coderslab.pl//en/");
+            driver.get("https://hotel-testlab.coderslab.pl/en/");
 
-            WebElement searchSignIn = driver.findElement(By.className("hotel_location"));
+            WebElement searchSignIn = driver.findElement(By.className("user_login"));
             searchSignIn.click();
+
+            WebElement searchEmail = driver.findElement(By.className("account_input"));
+            searchEmail.sendKeys("987@com.pl");
+
+            WebElement searchCreateAnAccount = driver.findElement(By.id("SubmitCreate"));
+            searchCreateAnAccount.click();
 
         }
     }
