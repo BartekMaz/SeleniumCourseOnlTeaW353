@@ -41,7 +41,7 @@ public class ZadDom3Test {
         WebElement InputLastName = driver.findElement(By.id("last-name"));
         InputLastName.clear();
         InputLastName.sendKeys("Kowalski");
-        
+
         WebElement InputGender = driver.findElement(By.xpath("/html/body/div/div/form/div[3]/div/div/label[1]/input"));
         InputGender.click();
 
